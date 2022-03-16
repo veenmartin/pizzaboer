@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylecontact.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./afbeeldingen/favicon_pizza.ico"
+    />
+    <title>Contact</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <!--Begin van de Header-->
+      <div class="header">
+        <nav class="headerNav">
+          <a href="./index.html">Home |</a>
+          <a href="./menukaart.html">Menukaart |</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+        <h1 class="title">Contact</h1>
+      </div>
+
+      <!--Begin van het adres-->
+      <div class="adres">
+        <p><b>Adres</b></p>
+        Pizzaboer <br />
+        Straat 1 <br />
+        1111 AA Stad <br />
+        <br />
+        Telefoon: <a href="tel:0612345678">06 - 12 34 56 78</a> <br />
+        Email: <a href="mailto:info@wincpizza.nl">Info@wincpizza.nl</a> <br />
+        <br />
+        <b>OPENINGSTIJDEN:</b> <br /><br />
+        Zondag t/m donderdag: 15.00 - 22.00<br />
+        uur Vrijdag en zaterdag: 15.00 - 24.00 uur <br />
+        <br />
+        7 dagen per week geopend!<br />
+      </div>
+      <!--Begin van het formulier-->
+      <div class="formulier">
+        <h2>Contactformulier</h2>
+        <form enctype="multipart/form-data" method="POST" name="contact" data-netlify="true">
+          <table align="center">
+            <tr>
+              <td width="125px"><label>Naam</label></td>
+              <td><input type="text" name="naam" size="30" required /></td>
+            </tr>
+
+            <tr>
+              <td><label>Email</label></td>
+              <td>
+                <input type="email" name="email" size="30" required />
+              </td>
+            </tr>
+
+            <tr>
+              <td><label>Telefoonnummer</label></td>
+              <td>
+                <input type="tel" name="telefoonnummer" size="30" required />
+              </td>
+            </tr>
+
+            <tr>
+              <td>Mogen wij u bellen?</td>
+              <td>
+                <input
+                  type="radio"
+                  name="bellen"
+                  value="ja"
+                  size="50"
+                  required
+                />
+                <label>ja</label>
+                <input
+                  type="radio"
+                  name="bellen"
+                  value="nee"
+                  size="50"
+                  required
+                />
+                <label>nee</label>
+              </td>
+            </tr>
+
+            <tr>
+              <td><label>Bericht</label></td>
+              <td>
+                <textarea
+                  name="message"
+                  rows="10"
+                  cols="29"
+                  required
+                ></textarea>
+              </td>
+            </tr>
+          </table>
+          <p>
+            <input type="submit" value="Versturen"  />
+            <input type="reset" value="Opnieuw"  />
+            <p> 
+            (Alle velden zijn verplicht.)
+          </p></p>
+        </form>
+      </div>
+      <!--Begin van de kaart-->
+      <div class="kaart">
+        <img src="./afbeeldingen/kaart.png" />
+      </div>
+
+      <!--Begin van de footer-->
+      <div class="footer">
+        <div>
+          <p><b>Contactgegevens:</b></p>
+          PizzaBoer<br />
+          Straat 1 <br />
+          1234 AA Plaats <br />
+          Tel:<a href="tel:0612345678"> 0612345678</a><br />
+          Email:<a href="mailto:info@pizzaboerwinc.nl"> Info@pizzaboerwinc.nl</a
+          ><br />
+        </div>
+        <div>
+          <p><b>Openingstijden:</b></p>
+
+          Maandag: gesloten<br />
+          Dinsdag: 14:00 - 20:00<br />
+          Woensdag: 14:00 - 20:00<br />
+          Donderdag: 14:00 - 22:00<br />
+          Vrijdag: 14:00 - 00:00<br />
+          Zaterdag: 14:00 - 00:00<br />
+          Zondag: 14:00 - 22:00<br />
+        </div>
+        <div>
+          <nav class="footerNav">
+            <p><b>Navigatie:</b></p>
+            <a href="./index.html">Home</a>
+            <a href="./menukaart.html">Menukaart</a>
+            <a href="./contact.html">Contact</a>
+          </nav>
+        </div>
+      </div>
+      <!--Begin van de copyright-->
+      <div class="copyright">Deze pagina is gemaakt door Martin.</div>
+    </div>
+  </body>
+</html>

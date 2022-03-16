@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./afbeeldingen/favicon_pizza.ico"
+    />
+    <link rel="stylesheet" href="stylemenukaart.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Menukaart</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <!--Begin van de Header-->
+      <div class="header">
+        <nav class="headerNav">
+          <a href="./index.html">Home |</a>
+          <a href="./menukaart.html">Menukaart |</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+        <h1 class="title">Menukaart</h1>
+      </div>
+
+      <div class="pizzaNav">
+        <nav class="pizzaNavLink">
+          <p>Kies uw soort: &nbsp</p>
+          <a href="#pizzas">Pizza's &nbsp</a>
+          <a href="#vispizzas">Vispizza's &nbsp</a>
+          <a href="#broodjes">Broodjes &nbsp</a>
+        </nav>
+      </div>
+
+      <!--Begin van de soorten-->
+      <div class="soorten">
+        <div class="pizza">
+          <h2 id="pizzas">Pizza's</h2>
+          <form
+            enctype="multipart/form-data"
+            name="bestelling"
+            method="POST"
+            data-netlify="true"
+          >
+            <table width="100%">
+              <tr>
+                <th>Selecteer:</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>Prijs</th>
+              </tr>
+
+              <tr>
+                <td width="40px">
+                  <input type="checkbox" name="pizza" value="margarita" />
+                </td>
+                <td colspan="4"><b>Margarita</b></td>
+                <td align="center">€ 6,95</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td colspan="4"><i>Tomatensaus, kaas</i></td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td width="40px">
+                  <input type="checkbox" name="pizza" value="Proscuitto" />
+                </td>
+                <td colspan="4"><b>Proscuitto</b></td>
+                <td align="center">€ 8,95</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td colspan="4"><i>Tomatensaus, kaas en ham</i></td>
+              </tr>
+
+              <tr>
+                <td width="40px">
+                  <input type="checkbox" name="pizza" value="Hawaï" />
+                </td>
+                <td colspan="4"><b>Hawaï</b></td>
+                <td align="center">€ 8,95</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td colspan="4"><i>Tomatensaus, kaas, ham en ananas</i></td>
+              </tr>
+
+              <tr>
+                <td width="40px">
+                  <input type="checkbox" name="pizza" value="Salami" />
+                </td>
+                <td colspan="4"><b>Salami</b></td>
+                <td align="center">€ 8,95</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td colspan="4"><i>Tomatensaus, kaas en salami</i></td>
+              </tr>
+
+              <tr>
+                <td width="40px">
+                  <input
+                    type="checkbox"
+                    name="pizza"
+                    value="Quattro Stagioni"
+                  />
+                </td>
+                <td colspan="4"><b>Quattro Stagioni</b></td>
+                <td align="center">€ 8,95</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td colspan="4">
+                  <i
+                    >Tomatensaus, kaas, ham, champignons, garnalen, salami en
+                    artisjokken</i
+                  >
+                </td>
+              </tr>
+
+              <tr>
+                <td width="40px">
+                  <input type="checkbox" name="pizza" value="Ciao-Ciao" />
+                </td>
+                <td colspan="4"><b>Ciao-Ciao (dubbel geslagen)</b></td>
+                <td align="center">€ 10,95</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td colspan="4">
+                  <i>Tomatensaus, kaas, uien, ossehaas en champignons</i>
+                </td>
+              </tr>
+
+              <tr>
+                <td width="40px">
+                  <input type="checkbox" name="pizza" value="Caruso" />
+                </td>
+                <td colspan="4"><b>Caruso</b></td>
+                <td align="center">€ 9,95</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td colspan="4"><i>Tomatensaus, kaas, spek, ei en ui</i></td>
+              </tr>
+
+              <tr>
+                <td width="40px">
+                  <input type="checkbox" name="pizza" value="Carbonara" />
+                </td>
+                <td colspan="4"><b>Carbonara</b></td>
+                <td align="center">€ 9,95</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td colspan="4"><i>Tomatensaus, kaas, spek en ui</i></td>
+              </tr>
+
+              <tr>
+                <td width="40px">
+                  <input type="checkbox" name="pizza" value="Mafioso" />
+                </td>
+                <td colspan="4"><b>Mafioso</b></td>
+                <td align="center">€ 9,95</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td colspan="4">
+                  <i>Tomatensaus, kaas, spek, paprika en champignons</i>
+                </td>
+              </tr>
+
+              <tr>
+                <td width="40px">
+                  <input type="checkbox" name="pizza" value="Torino" />
+                </td>
+                <td colspan="4"><b>Torino</b></td>
+                <td align="center">€ 9,95</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td colspan="4">
+                  <i>Tomatensaus, kaas, ham, champignons, uien en gehakt</i>
+                </td>
+              </tr>
+
+              <tr>
+                <td width="40px">
+                  <input type="checkbox" name="pizza" value="Fungi" />
+                </td>
+                <td colspan="4"><b>Fungi</b></td>
+                <td align="center">€ 8,95</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td colspan="4"><i>Tomatensaus, kaas en champignons</i></td>
+              </tr>
+
+              <tr>
+                <td width="40px">
+                  <input type="checkbox" name="pizza" value="Mare" />
+                </td>
+                <td colspan="4"><b>Mare</b></td>
+                <td align="center">€ 8,95</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td colspan="4">
+                  <i
+                    >Tomatensaus, kaas, champignons, uien, pepers en knoflook</i
+                  >
+                </td>
+              </tr>
+
+              <tr>
+                <td width="40px">
+                  <input
+                    type="checkbox"
+                    name="pizza"
+                    value="Quattro Fromggi"
+                    va
+                  />
+                </td>
+                <td colspan="4"><b>Quattro Fromggi</b></td>
+                <td align="center">€ 7,95</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td colspan="4"><i>Tomatensaus en 4 soorten kaas</i></td>
+              </tr>
+            </table>
+            <br />
+            <input type="submit" value="Versturen" />
+            <input type="reset" value="Opnieuw" />
+          </form>
+        </div>
+        <div class="vispizza">
+          <h2 id="vispizzas">Vispizza's</h2>
+          <ol start="1">
+            <li>Tonno</li>
+            <ul>
+              <li>Tomatensaus, kaas en tonijn</li>
+            </ul>
+            <li>Riva del sol</li>
+            <ul>
+              <li>Tomatensaus, kaas, tonijn, garnalen en mosselen</li>
+            </ul>
+            <li>Calzone</li>
+            <ul>
+              <li>Tomatensaus, kaas, champignons, garnalen en ham</li>
+            </ul>
+            <li>Pescatore</li>
+            <ul>
+              <li>Tomatensaus, kaas, garnalen en tonijn</li>
+            </ul>
+            <li>Florida</li>
+            <ul>
+              <li>Tomatensaus, kaas, ham, garnalen en ananas</li>
+            </ul>
+            <li>Portofino</li>
+            <ul>
+              <li>Tomatensaus, kaas, ham en garnalen</li>
+            </ul>
+            <li>Napolitana</li>
+            <ul>
+              <li>Tomatensaus, kaas, zalm en ui</li>
+            </ul>
+            <li>Stella Marina</li>
+            <ul>
+              <li>Tomatensaus, kaas, ansjovis en uien</li>
+            </ul>
+            <li>Quattro del mare</li>
+            <ul>
+              <li>Tomatensaus, kaas, zalm, ansjovis, garnalen en mosselen</li>
+            </ul>
+          </ol>
+        </div>
+        <div class="broodjes">
+          <h2 id="broodjes">Broodjes</h2>
+          <ol start="23" type="i">
+            <li>Shoarma</li>
+            <li>Reuze Shoarma</li>
+            <li>Jumbo Shoarma</li>
+            <li>Kipfilet</li>
+            <ul style="list-style-type: square">
+              <li>Uien, paprika en champignons</li>
+            </ul>
+            <li>Reuze Kipfilet</li>
+            <li>Shaslick</li>
+            <ul style="list-style-type: square">
+              <li>Rundvlees met uien</li>
+            </ul>
+            <li>Reuze Shaslick</li>
+            <li>Kofta</li>
+            <ul style="list-style-type: square">
+              <li>Rundergehakt</li>
+            </ul>
+            <li>Reuze Kofta</li>
+            <li>Falafel</li>
+            <ul style="list-style-type: square">
+              <li>Vegatarisch</li>
+            </ul>
+            <li>Reuze Falafel</li>
+            <li>Pitah kaas</li>
+            <li>Pitah ham/kaas</li>
+            <li>Pitah kaas/ananas</li>
+            <li>Pitah ham/kaas/ananas</li>
+            <li>Pitah gezond</li>
+            <ul style="list-style-type: square">
+              <li>Sla, ananas, ham en gesmolten kaas</li>
+            </ul>
+          </ol>
+        </div>
+      </div>
+
+      <!--Begin van de footer-->
+      <div class="footer">
+        <div>
+          <p><b>Contactgegevens:</b></p>
+          PizzaBoer <br />
+          Straat 1 <br />
+          1234 AA Plaats <br />
+          Tel:<a href="tel:0612345678"> 0612345678</a><br />
+          Email:<a href="mailto:info@pizzaboerwinc.nl"> Info@pizzaboerwinc.nl</a
+          ><br />
+        </div>
+        <div>
+          <p><b>Openingstijden:</b></p>
+
+          Maandag: gesloten<br />
+          Dinsdag: 14:00 - 20:00<br />
+          Woensdag: 14:00 - 20:00<br />
+          Donderdag: 14:00 - 22:00<br />
+          Vrijdag: 14:00 - 00:00<br />
+          Zaterdag: 14:00 - 00:00<br />
+          Zondag: 14:00 - 22:00<br />
+        </div>
+        <div>
+          <nav class="footerNav">
+            <p><b>Navigatie:</b></p>
+            <a href="./index.html">Home</a>
+            <a href="./menukaart.html">Menukaart</a>
+            <a href="./contact.html">Contact</a>
+          </nav>
+        </div>
+      </div>
+
+      <!--Begin van de copyright-->
+      <div class="copyright">Deze pagina is gemaakt door Martin.</div>
+    </div>
+  </body>
+
+  <script></script>
+</html>

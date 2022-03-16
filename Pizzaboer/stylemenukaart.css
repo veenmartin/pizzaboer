@@ -1,0 +1,345 @@
+a {
+  font-size: 1em;
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: red;
+}
+
+body {
+  margin: 0;
+  background-color: floralwhite;
+  color: red;
+  background-image: url("./afbeeldingen/header_menu.jpg");
+  background-size: 2200px 386px;
+  background-repeat: no-repeat;
+  font-size: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 386px 1fr 250px 75px;
+  grid-template-areas:
+    "h h h h h h h h h h h h"
+    ". pn pn s s s s s s s s ."
+    ". f f f f f f f f f f ."
+    ". o o o o o o o o o o .";
+}
+
+.header {
+  grid-area: h;
+  margin: 20px 20px 0 0;
+  text-align: right;
+}
+
+.header .title {
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 50px 150px;
+  color: rgb(10, 10, 10);
+  font-size: 150px;
+  text-align: center;
+}
+
+.pizzaNav {
+  padding: 15px;
+  grid-area: pn;
+  color: red;
+}
+
+.pizzaNav a {
+  color: red;
+}
+
+.pizzaNavLink {
+  display: flex;
+  flex-direction: column;
+  color: red;
+}
+
+.soorten {
+  grid-area: s;
+}
+
+.soorten H2 {
+  text-align: center;
+}
+
+.soorten .pizza {
+  color: darkblue;
+  background-color: rgba(130, 194, 214, 0.562);
+  border-radius: 25px;
+  padding-left: 20px;
+}
+
+.soorten .vispizza {
+  color: red;
+  background-color: rgba(233, 201, 175, 0.651);
+  border-radius: 25px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.soorten .broodjes {
+  list-style-type: square;
+  color: rgb(61, 138, 71);
+  background-color: rgba(158, 250, 186, 0.562);
+  border-radius: 25px;
+  padding-left: 30px;
+  padding-top: 10px;
+}
+
+.footer {
+  grid-area: f;
+  color: white;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-around;
+  background-color: orangered;
+}
+
+.footer .footerNav {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer a:hover {
+  color: brown;
+}
+
+.copyright {
+  grid-area: o;
+  padding: 15px;
+  text-align: center;
+  color: black;
+}
+
+@media screen and (min-width: 1px) {
+  body {
+    margin: 0;
+    background-color: floralwhite;
+    color: red;
+    background-image: url("./afbeeldingen/header_menu.jpg");
+    background-size: 2200px 250px;
+    background-repeat: no-repeat;
+    font-size: 20px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 13em 3em 1fr 615px 50px;
+    grid-template-areas:
+      "h h h h h h h h h h h h"
+      ". pn pn pn pn pn pn pn pn pn pn ."
+      ". s s s s s s s s s s ."
+      ". f f f f f f f f f f ."
+      ". o o o o o o o o o o .";
+  }
+
+  .header {
+    grid-area: h;
+    margin: 20px 20px 0 0;
+    text-align: right;
+  }
+
+  .header .title {
+    width: 5em;
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 50px auto;
+    color: rgb(10, 10, 10);
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .pizzaNav {
+    grid-area: pn;
+    color: red;
+  }
+
+  .pizzaNav a {
+    color: red;
+  }
+
+  .pizzaNavLink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .soorten {
+    grid-area: s;
+  }
+
+  .soorten H2 {
+    text-align: center;
+  }
+
+  .soorten .pizza {
+    color: darkblue;
+    background-color: rgba(130, 194, 214, 0.562);
+    border-radius: 25px;
+    padding-left: 20px;
+  }
+
+  .soorten .vispizza {
+    color: red;
+    background-color: rgba(233, 201, 175, 0.651);
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .soorten .broodjes {
+    list-style-type: square;
+    color: rgb(61, 138, 71);
+    background-color: rgba(158, 250, 186, 0.562);
+    border-radius: 25px;
+    padding-left: 30px;
+    padding-top: 10px;
+  }
+
+  .footer {
+    grid-area: f;
+    color: white;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: orangered;
+  }
+
+  .footer .footerNav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer a:hover {
+    color: brown;
+  }
+
+  .copyright {
+    grid-area: o;
+    padding: 15px;
+    text-align: center;
+    color: black;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    margin: 0;
+    background-color: floralwhite;
+    color: red;
+    background-image: url("./afbeeldingen/header_menu.jpg");
+    background-size: 2200px 386px;
+    background-repeat: no-repeat;
+    font-size: 20px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 386px 1fr 250px 50px;
+    grid-template-areas:
+      "h h h h h h h h h h h h"
+      ". pn pn s s s s s s s s ."
+      ". f f f f f f f f f f ."
+      ". o o o o o o o o o o .";
+  }
+
+  .header {
+    grid-area: h;
+    margin: 20px 20px 0 0;
+    text-align: right;
+  }
+
+  .header .title {
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 50px auto;
+    color: rgb(10, 10, 10);
+    font-size: 150px;
+    text-align: center;
+  }
+
+  .pizzaNav {
+    padding: 15px;
+    grid-area: pn;
+    color: red;
+  }
+
+  .pizzaNav a {
+    color: red;
+  }
+
+  .pizzaNavLink {
+    display: flex;
+    flex-direction: column;
+    color: red;
+  }
+
+  .soorten {
+    grid-area: s;
+  }
+
+  .soorten H2 {
+    text-align: center;
+  }
+
+  .soorten .pizza {
+    color: darkblue;
+    background-color: rgba(130, 194, 214, 0.562);
+    border-radius: 25px;
+    padding-left: 20px;
+  }
+
+  .soorten .vispizza {
+    color: red;
+    background-color: rgba(233, 201, 175, 0.651);
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .soorten .broodjes {
+    list-style-type: square;
+    color: rgb(61, 138, 71);
+    background-color: rgba(158, 250, 186, 0.562);
+    border-radius: 25px;
+    padding-left: 30px;
+    padding-top: 10px;
+  }
+
+  .footer {
+    grid-area: f;
+    color: white;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    background-color: orangered;
+  }
+
+  .footer .footerNav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer a:hover {
+    color: brown;
+  }
+
+  .copyright {
+    grid-area: o;
+    padding: 15px;
+    text-align: center;
+    color: black;
+  }
+}
